@@ -1,42 +1,78 @@
-html, body {
+html,
+body {
   width: 100%;
   height: 100%;
   margin: 0;
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
-  font-size:1em;
+  font-family: "Gotham", sans-serif;
+  font-size: 1em;
   line-height: 1.5;
   font-weight: 400;
-  color: '#444';
+  color: #14273c;
 
   text-rendering: optimizeLegibility;
 }
 
+@font-face {
+  font-family: Gotham;
+  src: url("./fonts/Gotham-Book.otf") format("opentype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Gotham;
+  src: url("./fonts/Gotham-Medium.otf") format("opentype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Gotham;
+  src: url("./fonts/Gotham-Bold.otf") format("opentype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: Gotham;
+  src: url("./fonts/Gotham-Black.otf") format("opentype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: audimat;
+  src: url("./fonts/audimat-mono-light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: neuton;
+  src: url("./fonts/neuton.ttf") format("truetype");
+}
 
 h1 {
-  margin:0px; /* was 20 px */
+  margin: 0px; /* was 20 px */
   /*
   text-align:center;*/
-  font-weight:100;
-  font-size:2rem;
+  font-weight: 100;
+  font-size: 2rem;
 }
 
 h2 {
-  margin:0px;
-  font-weight:700;
+  margin: 0px;
+  font-weight: 700;
   font-size: 1.5rem;
-  margin-bottom:1rem;
+  margin-bottom: 1rem;
 }
 
 h3 {
-  text-align:center;
-  font-weight:400;
-  font-size:1.2rem;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.2rem;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   line-height: 1.1;
 }
 
@@ -52,128 +88,10 @@ p {
   font-size: 1rem;
 }
 
-#logowrapper {
-  flex: 1;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  min-width: 10rem;
-}
-
-#logowrapper a {
-  text-decoration: none; /* no underline */
-  color: white;
-}
-
-#logowrapper h1 {
-  text-align: center;
-}
-
-#logos {
-  margin-top:1rem;
-}
-
-#logos > a:first-child {
-  margin-right: 0.75rem;
-}
-
 #root {
   height: 100%;
   display: flex;
   flex-direction: column;
-}
-
-#title {
-  flex: 1;
-}
-
-#header {
-  color: white;
-  background-image: linear-gradient(to bottom, #2c003e, #721b65); /*#512b58*/
-  position: relative;
-  display: flex;
-  padding: 0.75rem;
-  flex-shrink: 0
-}
-
-#explainer {
-  flex: 6;
-  padding-right: 2rem;
-  text-align: justify;
-}
-
-#explainer a {
-  text-decoration: underline;
-  color: lightgoldenrodyellow;
-}
-
-#explainer p {
-  margin-top: 0.5rem;
-  font-size: 0.9rem;
-}
-
-#explainer > p:first-child {
-  margin-top: 0;
-}
-
-#content {
-  display: flex;
-  flex-direction: row;
-  flex-grow: 1;
-
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
-}
-
-#content h2 {
-  color: #fe346e;
-}
-
-#left-column {
-  flex: 6;
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
-}
-
-#right-column {
-  flex: 1;
-
-  display: flex;
-  flex-direction: column;
-
-  background-color: #fcf8e8;
-  padding: 1rem;
-  min-width: 10rem;
-
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
-}
-
-#right-column > div {
-  margin-bottom: 2rem;
-}
-
-#right-column > div:last-child {
-  margin-bottom: 0;
-}
-
-#countries {
-
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
-}
-
-#right-column h2 {
-  font-size: 1.5rem;
-  text-align: center;
-}
-
-#footer {
-  font-size: 0.75rem;
 }
 
 #nav {
@@ -202,50 +120,7 @@ p {
 }
 
 svg {
-  fill: #fe346e;
-}
-
-#hide {
-  font-size: 1rem;
-  padding: 0.5rem;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
-
-#buttonwrapper {
-  width: 100%;
-  display:flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-
-  justify-content: space-between;
-}
-
-button {
-  padding: 0.3rem;
-  margin: auto;
-  font-size: 1rem;
-
-  text-align: center;
-  text-decoration: none;
-
-  transition-duration: 0.4s;
-
-  background-color: #fe346e;
-  color: lightgoldenrodyellow;
-  border: 0.125rem solid #fe346e;
-  border-radius: 0.25rem;
-}
-
-button:hover {
-  background-color: #b80d57;
-  border: 0.125rem solid #b80d57;
-  color: lightgoldenrodyellow;
-}
-
-#countries button {
-  margin-top: 0.5rem;
+  fill: #68bbe8;
 }
 
 select {
